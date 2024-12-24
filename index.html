@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motlalepula Makhanya - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url(widgets.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0c5d94;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            color: whitesmoke;
+
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+       
+        header {
+            background: #090763;
+            color: yellow;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background: #0c5d94;
+            color: aquamarine;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: aquamarine;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #6a1b9a;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #090763;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h3 {
+            color: yellow;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 0.9em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #6a1b9a;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background: linear-gradient(to bottom right, #6a1b9a, #ff4081);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        .highlight-box {
+            background: linear-gradient(to bottom right, #6a1b9a, #ff4081);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            /* background-image: url(7.avif);
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background: #ffffffcb; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #090763;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .section h3 {
+            color: #0c5d94;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background: b;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h3 {
+            color: yellow;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: aquamarine;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="me.jpg" width="200" alt="{{user.fullName}}" class="images">
+        <h1>Motlalepula Makhanya</h1>
+        <p>Electrical Engineer | Full-Stack Developer | Innovator</p>
+
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div>
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>I am an Electrical Engineering graduate with expertise in web development, data analysis, and
+                    cybersecurity. Passionate about innovation, I bring hands-on experience to create impactful
+                    solutions.</p>
+            </section>
+
+        </div>
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <div>
+                <h3>4IR Intern - Accenture/UJ Work Readiness Program</h3>
+                <p><strong>February 2024 – October 2024</strong></p>
+                <ul>
+                    <li>Developed full-stack web applications using Agile methodologies, building front-end (HTML, CSS, JavaScript) and back-end (Express.js, SQL) components.</li>
+                    <li>Worked on data analysis and cleaning, leveraging Python and SQL to develop insights for AI-driven projects.</li>
+                    <li>Gained experience in teamwork, technical documentation, and version control.</li>
+                    <li>Contributed to projects focusing on machine learning model training and performance enhancement.</li>
+                </ul>
+
+                <h3>Community Engagement Volunteer - University of Johannesburg</h3>
+                <p><strong>March 2021 – December 2021</strong></p>
+                <ul>
+                    <li>Tutored high school students in Mathematics, Physics, and Life Sciences, supporting their academic growth.</li>
+                    <li>Participated in community outreach initiatives, including data capturing, environmental clean-ups, and agricultural support.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Capstone Project</h3>
+                    <p>A Flask-based application leveraging machine learning to predict dementia risk and assist in
+                        medical decisions.</p>
+                    <a href="https://dmentia-app5.onrender.com/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Basic Webpage</h3>
+                    <p>A simple webpage showcasing foundational web development skills using HTML and CSS.</p>
+                    <a href="https://motlalepulamakhanya.github.io/basic-webpage/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Materialise Webpage</h3>
+                    <p>A responsive webpage utilizing Materialize CSS framework for modern and mobile-first designs.</p>
+                    <a href="https://motlalepulamakhanya.github.io/materialise-webpage/" target="_blank">View
+                        Project</a>
+                </div>
+                <div class="project">
+                    <h3>Bootcamp Widgets</h3>
+                    <p>A collection of interactive widgets developed during a bootcamp, demonstrating JavaScript and
+                        AlpineJS proficiency.</p>
+                    <a href="https://motlalepulamakhanya.github.io/bootcamp-widgets/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project">
+                    <h3>Pizza API</h3>
+                    <p>A fully functional pizza order management system integrated with a RESTful API for order handling
+                        and tracking.</p>
+                    <a href="https://motlalepulamakhanya.github.io/pizza-api/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Bootcamp Tests</h3>
+                    <p>Automated test cases created to validate functionality and improve reliability of bootcamp
+                        projects.</p>
+                    <a href="https://motlalepulamakhanya.github.io/bootcamp-tests/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Counter Widget</h3>
+                    <p>A minimalistic counter application showcasing the use of JavaScript and modern UI design
+                        principles.</p>
+                    <a href="https://motlalepulamakhanya.github.io/counters/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>UJ May Assessment</h3>
+                    <p>A comprehensive project developed for the University of Johannesburg assessment, highlighting
+                        analytical and problem-solving skills.</p>
+                    <a href="https://motlalepulamakhanya.github.io/UJ-May-assessment/" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: Java, C++, Python, JavaScript</li>
+                <li>Web Development: HTML, CSS, Node.js, SQL</li>
+                <li>Data Analysis: Python, MATLAB, R</li>
+                <li>Tools: Git, MATLAB, Simulink</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:motlalepulamakhanya5@gmail.com">motlalepulamakhanya5@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/MotlalepulaMakhanya" target="_blank">MotlalepulaMakhanya</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/motlalepula-makhanya-6678b723b/"
+                    target="_blank">Motlalepula Makhanya</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Motlalepula Makhanya. Built with passion and purpose.</p>
+    </footer>
+</body>
+
+</html>
